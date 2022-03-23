@@ -1,0 +1,95 @@
+:root{
+  --primary: #F05F40;
+  --secondary: #212529;
+}
+
+a{
+  color: rgba(255, 255, 255, 0.7)!important;
+  text-decoration: none;
+}
+
+#about-me{
+  background-color: var(--primary);
+}
+
+#and-more{
+  background-color: var(--secondary);
+}
+
+p{
+  font-family: 'Merriweather', serif;
+}
+
+section{
+  padding: 8rem 0;
+}
+
+header{
+  height: 100vh;
+  background-image: url('https://markohnsman.github.io/img/header.jpg');
+  background-size: cover;
+}
+
+.font-size{
+  font-size: 3rem;
+}
+
+#main-nav{
+  background-color: transparent;
+}
+
+.chonk-button{
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 300px;
+  padding: 1rem 2rem;
+  background-color: var(--primary);
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+
+hr{
+  max-width: 50px;
+  height: 5px;
+  border-width: 3px;
+  /* border-color: var(--primary); */
+  /* border-top: 2px solid var(--primary)!important; */
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid var(--primary)!important;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-weight: 700;
+  opacity: 1;
+}
+
+.instructor-row{
+  height: 80vh;
+}
+
+.no-gutters>[class*=col-]{
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.col-md-4>p{
+  color: var(--primary);
+}
+
+.cat{
+  max-height: 100px;
+  max-width: 100px;
+}
+
+@media only screen and (max-width: 568px) {
+  #main-nav {
+    background-color: white;
+  }
+  .navbar-brand{
+    color: var(--primary)!important;
+  }
+  header{
+    background-image: url('https://codeworks.blob.core.windows.net/media/mark.ohnsman__QGdtYWlsLmNvbQ==/profile-picture.jpeg?v=761');
+    background-size: cover;
+  }
+}
