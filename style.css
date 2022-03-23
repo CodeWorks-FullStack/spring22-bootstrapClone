@@ -3,21 +3,22 @@
   --secondary: #212529;
 }
 
+/* SECTION element tags */
+
 a{
   color: rgba(255, 255, 255, 0.7)!important;
   text-decoration: none;
 }
 
-#about-me{
-  background-color: var(--primary);
-}
-
-#and-more{
-  background-color: var(--secondary);
-}
-
-p{
-  font-family: 'Merriweather', serif;
+hr{
+  max-width: 50px;
+  height: 5px;
+  border-width: 3px;
+  /* you can combine all margin properties into one line - top, right, bottom, left */
+  margin: 30px auto 30px auto;
+  border: 2px solid var(--primary)!important;
+  font-weight: 700;
+  opacity: 1;
 }
 
 section{
@@ -30,12 +31,28 @@ header{
   background-size: cover;
 }
 
-.font-size{
-  font-size: 3rem;
+p{
+  font-family: 'Merriweather', serif;
+}
+
+/* SECTION ID tags */
+
+#about-me{
+  background-color: var(--primary);
+}
+
+#and-more{
+  background-color: var(--secondary);
 }
 
 #main-nav{
   background-color: transparent;
+}
+
+/* SECTION class tags */
+
+.font-size{
+  font-size: 3rem;
 }
 
 .chonk-button{
@@ -48,21 +65,6 @@ header{
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
 }
 
-hr{
-  max-width: 50px;
-  height: 5px;
-  border-width: 3px;
-  /* border-color: var(--primary); */
-  /* border-top: 2px solid var(--primary)!important; */
-  margin-left: auto;
-  margin-right: auto;
-  border: 2px solid var(--primary)!important;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  font-weight: 700;
-  opacity: 1;
-}
-
 .instructor-row{
   height: 80vh;
 }
@@ -72,6 +74,7 @@ hr{
   padding-right: 0;
 }
 
+/* NOTE look for a an element with the class of col-md-4, then apply styling to any direct descendants that are p elements */
 .col-md-4>p{
   color: var(--primary);
 }
@@ -80,6 +83,8 @@ hr{
   max-height: 100px;
   max-width: 100px;
 }
+
+/* SECTION Media queries */
 
 @media only screen and (max-width: 568px) {
   #main-nav {
@@ -90,6 +95,5 @@ hr{
   }
   header{
     background-image: url('https://codeworks.blob.core.windows.net/media/mark.ohnsman__QGdtYWlsLmNvbQ==/profile-picture.jpeg?v=761');
-    background-size: cover;
   }
 }
